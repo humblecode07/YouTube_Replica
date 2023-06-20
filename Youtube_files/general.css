@@ -1,0 +1,29 @@
+* {
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #F1F1F1;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body {
+    background-color: rgba(15,15,15,255);
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 270px;
+    padding-right: 80px;
+}
+
+.superscript {
+    display: inline-block;
+}
+
+.superscript-text {
+    font-size: 15px;
+    margin-top: -16px;
+    padding-left: 5px;
+    color: hsl(0, 0%, 57%)
+}

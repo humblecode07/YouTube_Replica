@@ -1,0 +1,228 @@
+.header {
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(15,15,15,255);
+    padding-top: 2px;
+    z-index: 1;
+}
+
+.tooltip {
+    font-family: 'Roboto';
+}
+
+.left-section {
+    width: 175px;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    flex-shrink: 0;
+}
+
+.hamborgar {
+    margin-left: 10px;
+    width: 110px;
+    height: 40px;
+    fill: currentcolor;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.hamborgar-menu {
+    pointer-events: none; 
+    display: block; 
+    width: 60%; 
+    height: 100%;
+    margin-left: 9px;
+    margin-right: auto;
+    color: #F1F1F1;
+}
+
+.logo-icon {
+    pointer-events: none; 
+    width: 85%; 
+    height: 100%;
+    margin-top: 5px;
+    margin-left: 18px;
+}
+
+.middle-section {
+    flex: 1;
+    max-width: 45%;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    background-color: rgba(15,15,15,255);
+    border-color: rgba(34,34,34,255);
+    color: #F1F1F1;
+    flex: 1;
+    height: 36px;
+    padding-left: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 18px 0 0 18px;
+    z-index: 1;
+}
+
+.search-bar::placeholder {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+}
+
+.search {
+    width: 64px;
+    height: 40px;
+    fill: currentColor;
+    padding-left: 15px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgba(34,34,34,255);
+    border-color: rgba(34,34,34,255);
+    border-radius: 0 32px 32px 0;
+    cursor: pointer;
+}
+
+.search, .mic, .upload, .notif-icon-container {
+    position: relative;
+}
+
+.search .tooltip, .mic .tooltip, .upload .tooltip, .notif-icon-container .tooltip {
+    position: absolute;
+    background-color: rgb(87, 87, 87);
+    color: #F1F1F1;
+    padding: 10px 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    opacity: 0;
+    bottom: -48px;
+    left: 5px;
+    transition: opacity 0.30s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.mic .tooltip {
+    left: -50px;
+}
+
+.upload .tooltip {
+    left: -5px;
+}
+
+.search:hover .tooltip, .mic:hover .tooltip, .upload:hover .tooltip, .notif-icon-container:hover .tooltip{
+    opacity: .9;
+}
+
+.search-design {
+    pointer-events: none; 
+    display: block; 
+    width: 65%; 
+    height: 65%;
+    color: #F1F1F1;
+}
+
+.mic {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 20px;
+    background-color: rgba(24,24,24,255);
+    border: none;
+    cursor: pointer;
+}
+
+.mic:hover, .upload:hover, .notif-icon-container:hover, .hamborgar:hover {
+    background-color: rgba(63,63,63,255);
+}
+
+.mic-icon {
+    pointer-events: none; 
+    display: block; 
+    width: 100%; 
+    height: 70%;
+    color: #F1F1F1;
+}
+
+.right-section {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 40px;
+    flex-shrink: 0;
+}
+
+.upload-icon {
+    pointer-events: none; 
+    display: block; 
+    width: 65%; 
+    height: 70%;
+    color: #F1F1F1;
+    padding-top: 6px;
+    padding-left: 9px;
+}
+
+.upload {
+    fill: currentColor;
+    width: 110px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.notification-icon {
+    pointer-events: none; 
+    display: block; 
+    width: 100%; 
+    height: 24px;
+    color: #F1F1F1;
+    margin-top: 8px;
+}
+
+.notif-icon-container {
+    width: 110px;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    fill: currentColor;
+}
+
+.notifications-count {
+    position: absolute;
+    top: 2px;
+    left: 20px;
+    background-color: rgb(177, 3, 3);
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    padding: 2px 4px 2px 4px;
+    border-radius: 20px;
+    color: #F1F1F1;
+}
+
+.user-picture {
+    height: 32px;
+    margin-top: 13px;
+    border-radius: 16px;
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.mic:active, .upload:active, .notif-icon-container:active, .hamborgar:active {
+    background-color: rgba(80, 80, 80, 255);
+}
